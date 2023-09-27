@@ -22,11 +22,11 @@ namespace EventosAca.Share.Entities
 
         public int? AcademicoId { get; set; }
 
-        public string fechaInicio { get; set; }
+        public string? fechaInicio { get; set; }
 
-        public string fechaOut { get;set; }
+        public string? fechaOut { get;set; }
 
-        public string ubicacion { get; set; }   
+        public string? ubicacion { get; set; }   
 
 
     }

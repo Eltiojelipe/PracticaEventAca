@@ -54,15 +54,19 @@ namespace EventosAca.API.Controllers
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> Delete(int id)
         {
-            var afectado = await _context.programaEventos.Where(c => c.Id == id).ExecuteDeleteAsync;
+
+            var afectado = await _context.programaEventos
+                .Where(x => x.Id == id)
+                .ExecuteDeleteAsync();
 
             if (afectado == 0)
             {
+
                 return NotFound();
+
             }
 
             return NoContent();
-
         }
     }
 }

@@ -10,7 +10,7 @@ namespace EventosAca.API.Data
         }
         public DbSet<EventoAcademico> eventos { get; set; }
         public DbSet<Participantes> participante { get; set; }
-        public DbSet<programaEvento> programaEventos { get; set; }
+        public DbSet<ProgramaEvento> programaEventos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
